@@ -62,7 +62,6 @@ export default function ProjectsSection() {
             id="projects"
             className="min-h-screen bg-[#050505] text-white py-20 px-4 md:px-12 lg:px-24 scroll-mt-10 font-sans"
         >
-            {/* Header Section */}
             <div className="mb-24">
                 <div className="flex items-center space-x-2 text-blue-500 mb-6 bg-blue-500/10 w-fit px-4 py-1.5 rounded-full border border-blue-500/20">
                     <Code2 size={16} />
@@ -81,14 +80,12 @@ export default function ProjectsSection() {
                 </div>
             </div>
 
-            {/* Projects Grid */}
             <div className="space-y-40">
                 {projects.map((project, index) => (
                     <div
                         key={index}
                         className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-16 items-center`}
                     >
-                        {/* Image */}
                         <div className="w-full md:w-3/5 group cursor-pointer">
                             <div className="relative overflow-hidden rounded-3xl border border-white/5 bg-[#0a0a0a] transition-all duration-700 group-hover:border-blue-500/30 group-hover:shadow-[0_0_50px_rgba(59,130,246,0.15)]">
                                 <img
@@ -103,7 +100,6 @@ export default function ProjectsSection() {
                             </div>
                         </div>
 
-                        {/* Details */}
                         <div className="w-full md:w-2/5 space-y-8">
                             <div>
                                 <div className="flex items-center gap-3 text-blue-500">
@@ -121,7 +117,6 @@ export default function ProjectsSection() {
                                 {project.description}
                             </p>
 
-                            {/* Tech */}
                             <div className="flex flex-wrap gap-3">
                                 {project.tech.map((t, i) => (
                                     <span
@@ -133,7 +128,6 @@ export default function ProjectsSection() {
                                 ))}
                             </div>
 
-                            {/* Actions */}
                             <div className="flex items-center gap-6 pt-4">
                                 <a
                                     href={project.live}

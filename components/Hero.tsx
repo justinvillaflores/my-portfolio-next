@@ -45,13 +45,10 @@ export default function Hero() {
             id="home"
             className="relative min-h-screen bg-[#050b1a] text-white flex items-center pt-24 md:pt-20 overflow-hidden"
         >
-            {/* BLUE GLOW */}
             <div className="absolute top-[-10%] right-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-blue-600/20 blur-[100px] md:blur-[120px] rounded-full" />
 
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
-                {/* LEFT */}
                 <div className="z-10 text-center md:text-left order-2 md:order-1">
-                    {/* STATUS BADGE */}
                     <div className="inline-flex items-center gap-2 bg-blue-900/30 border border-blue-500/30 px-3 py-1 rounded-full mb-6">
                         <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
                         <span className="text-xs text-blue-300 font-medium">
@@ -66,7 +63,6 @@ export default function Hero() {
                         </span>
                     </h1>
 
-                    {/* TYPING TEXT */}
                     <p className="text-lg md:text-xl text-gray-300 mb-2 h-8">
                         <span className="border-r-2 border-blue-400 pr-1">
                             {displayText}
@@ -79,7 +75,6 @@ export default function Hero() {
                         journey.
                     </p>
 
-                    {/* BUTTONS */}
                     <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-12">
                         <a
                             href="#projects"
@@ -97,7 +92,6 @@ export default function Hero() {
                     </div>
                 </div>
 
-                {/* RIGHT IMAGE */}
                 <div className="relative flex justify-center items-center order-1 md:order-2">
                     <div className="relative w-[280px] h-[400px] md:w-[350px] md:h-[500px] lg:w-[400px] lg:h-[550px] rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 border border-white/10">
                         <Image
@@ -109,8 +103,7 @@ export default function Hero() {
                         />
                     </div>
 
-                    {/* FLOATING CARD */}
-                    <div className="hidden sm:block absolute bottom-10 left-[-20px] md:left-[-40px] bg-[#0b1228]/90 backdrop-blur-xl p-4 rounded-xl border border-white/10 shadow-2xl w-[180px] md:w-[220px] animate-bounce-slow">
+                    <div className="absolute bottom-10 left-[-20px] md:left-[-40px] bg-[#0b1228]/90 backdrop-blur-xl p-4 rounded-xl border border-white/10 shadow-2xl w-[180px] md:w-[220px] animate-bounce-slow">
                         <div className="flex gap-1.5 mb-3">
                             <div className="w-3 h-3 rounded-full bg-red-500" />
                             <div className="w-3 h-3 rounded-full bg-yellow-500" />

@@ -32,7 +32,6 @@ export default function ToolsStack() {
             id="skills"
             className="min-h-screen bg-[#050505] text-white py-20 px-4 flex flex-col items-center scroll-mt-10"
         >
-            {/* Header */}
             <div className="text-center mb-12">
                 <h2 className="text-4xl md:text-4xl font-bold tracking-tighter uppercase mb-2">
                     Tools & Stack
@@ -40,7 +39,6 @@ export default function ToolsStack() {
                 <div className="w-24 h-1 bg-white mx-auto rounded-full"></div>
             </div>
 
-            {/* Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-6xl">
                 {tools.map((tool, index) => (
                     <div

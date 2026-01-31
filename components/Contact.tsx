@@ -9,7 +9,6 @@ import {
 export default function ContactAndFooter() {
     const currentYear = new Date().getFullYear();
 
-    // Function to copy text to clipboard
     const copyToClipboard = (text: string) => {
         if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(text).then(() => {
@@ -24,10 +23,9 @@ export default function ContactAndFooter() {
 
     return (
         <section
-            id="contact" // <-- Added for smooth scrolling
+            id="contact"
             className="min-h-screen bg-[#050505] text-white py-20 px-4 flex flex-col items-center scroll-mt-10"
         >
-            {/* --- CONTACT SECTION --- */}
             <div className="max-w-6xl mx-auto mb-32 w-full">
                 <div className="text-center mb-16 space-y-2">
                     <span className="text-blue-500 font-bold tracking-[0.3em] uppercase text-xs">Get In Touch</span>
@@ -35,9 +33,7 @@ export default function ContactAndFooter() {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                    {/* Left Side: Info Cards */}
                     <div className="lg:col-span-5 space-y-4">
-                        {/* Email Card */}
                         <div className="group bg-[#0a0a0a] border border-white/5 p-6 rounded-2xl hover:border-blue-500/30 transition-all duration-500 relative overflow-hidden">
                             <div className="flex justify-between items-start relative z-10">
                                 <div className="space-y-4">
@@ -62,7 +58,6 @@ export default function ContactAndFooter() {
                             </div>
                         </div>
 
-                        {/* Location Card */}
                         <div className="bg-[#0a0a0a] border border-white/5 p-6 rounded-2xl hover:border-blue-500/30 transition-all duration-500">
                             <div className="space-y-4">
                                 <div className="p-3 bg-blue-500/10 rounded-lg w-fit">
@@ -75,9 +70,7 @@ export default function ContactAndFooter() {
                             </div>
                         </div>
 
-                        {/* Social Mini Grid */}
                         <div className="grid grid-cols-2 gap-4">
-                            {/* LinkedIn */}
                             <a
                                 href="http://www.linkedin.com/in/justin-villaflores-7b7467337"
                                 target="_blank"
@@ -88,7 +81,6 @@ export default function ContactAndFooter() {
                                 <span className="text-sm font-bold uppercase tracking-widest">LinkedIn</span>
                             </a>
 
-                            {/* Facebook */}
                             <a
                                 href="https://www.facebook.com/jstn.m.vllflrs.2020"
                                 target="_blank"
@@ -101,7 +93,6 @@ export default function ContactAndFooter() {
                         </div>
                     </div>
 
-                    {/* Right Side: Contact Form */}
                     <div className="lg:col-span-7 bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl relative overflow-hidden">
                         <div className="flex gap-1.5 absolute top-6 right-8">
                             <div className="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
@@ -143,7 +134,6 @@ export default function ContactAndFooter() {
                 </div>
             </div>
 
-            {/* --- FOOTER SECTION --- */}
             <div className="border-t border-white/5 pt-20">
                 <div className="text-center space-y-8 mb-20">
                     <p className="text-blue-500 font-bold tracking-[0.4em] uppercase text-[10px]">What's Next?</p>
@@ -160,12 +150,10 @@ export default function ContactAndFooter() {
                     </div>
                 </div>
 
-                {/* Bottom Bar */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/5 pt-8">
 
 
                     <div className="flex items-center gap-4 order-first md:order-none">
-                        {/* GitHub */}
                         <a
                             href="https://github.com/justinvillaflores"
                             target="_blank"
@@ -175,7 +163,6 @@ export default function ContactAndFooter() {
                             <Github size={18} />
                         </a>
 
-                        {/* LinkedIn */}
                         <a
                             href="http://www.linkedin.com/in/justin-villaflores-7b7467337"
                             target="_blank"
@@ -185,7 +172,6 @@ export default function ContactAndFooter() {
                             <Linkedin size={18} />
                         </a>
 
-                        {/* Instagram */}
                         <a
                             href="https://www.instagram.com/jstnvllflrs"
                             target="_blank"
@@ -195,7 +181,6 @@ export default function ContactAndFooter() {
                             <Instagram size={18} />
                         </a>
 
-                        {/* Facebook */}
                         <a
                             href="https://www.facebook.com/jstn.m.vllflrs.2020"
                             target="_blank"

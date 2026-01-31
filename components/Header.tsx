@@ -17,7 +17,6 @@ export default function Header() {
         <header className="fixed top-0 w-full bg-[#0a0510]/80 backdrop-blur-md z-[100] px-6 py-4">
             <nav className="max-w-7xl mx-auto flex justify-between items-center">
 
-                {/* Logo Area */}
                 <div className="flex flex-col leading-tight text-left">
                     <h2 className="text-xl font-bold text-white flex items-center gap-1">
                         &lt;<span className="text-blue-400">JustinDev</span>/&gt;
@@ -27,7 +26,6 @@ export default function Header() {
                     </span>
                 </div>
 
-                {/* Desktop Navigation */}
                 <ul className="hidden md:flex gap-10 text-gray-300 font-medium text-sm uppercase tracking-widest">
                     {navLinks.map((link, index) => (
                         <li key={index} className="relative group">
@@ -42,7 +40,6 @@ export default function Header() {
                     ))}
                 </ul>
 
-                {/* CUSTOM HAMBURGER */}
                 <div
                     className="flex flex-col justify-between w-8 h-5 cursor-pointer md:hidden z-[110]"
                     onClick={() => setIsOpen(!isOpen)}
@@ -52,14 +49,12 @@ export default function Header() {
                     <span className={`w-full h-[3px] bg-white rounded-full transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-[8.5px]" : ""}`}></span>
                 </div>
 
-                {/* MOBILE MENU OVERLAY */}
                 <div className={`
                     fixed inset-0 w-full h-screen bg-[#0a0510] flex items-center justify-center transition-all duration-500 ease-in-out md:hidden
                     ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}
                 `}>
                     <nav className="flex flex-col items-center gap-8">
                         {navLinks.map((link, index) => {
-                            // CALCULATE DELAY HERE TO AVOID PARSING ERROR
                             const delayValue = (index * 100) + "ms";
 
                             return (

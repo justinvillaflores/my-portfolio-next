@@ -18,7 +18,6 @@ export default function About() {
             className="min-h-screen bg-black text-white px-6 py-20 md:px-16 font-sans"
         >
             <div className="max-w-6xl mx-auto">
-                {/* Header */}
                 <div className="text-center mb-14">
                     <p className="text-blue-500 uppercase tracking-widest text-sm font-semibold mb-2">
                         Overview
@@ -28,9 +27,7 @@ export default function About() {
                     </h2>
                 </div>
 
-                {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-                    {/* Who Am I */}
                     <div className="md:col-span-6 bg-[#0b0f1f] border border-white/10 rounded-2xl p-8 hover:border-blue-500/40 transition-all">
                         <div className="flex items-center gap-4 mb-6">
                             <div className="bg-blue-500/10 p-3 rounded-xl">
@@ -52,7 +49,6 @@ export default function About() {
                         </p>
                     </div>
 
-                    {/* Stats */}
                     <div className="md:col-span-3 bg-[#0b0f1f] border border-white/10 rounded-2xl p-8 flex flex-col justify-center items-center text-center space-y-8">
                         <div>
                             <h4 className="text-5xl font-bold">2+</h4>
@@ -71,7 +67,6 @@ export default function About() {
                         </div>
                     </div>
 
-                    {/* Current Focus */}
                     <div className="md:col-span-3 bg-[#0b0f1f] border border-white/10 rounded-2xl p-8 relative overflow-hidden">
                         <div className="relative z-10">
                             <h3 className="text-lg font-bold mb-4">Current Focus</h3>
@@ -102,7 +97,6 @@ export default function About() {
                         />
                     </div>
 
-                    {/* Base Station */}
                     <div className="md:col-span-6 bg-[#0b0f1f] border border-white/10 rounded-2xl p-8 flex items-center justify-between">
                         <div>
                             <h3 className="text-lg font-bold mb-1">Base Station</h3>
@@ -122,7 +116,6 @@ export default function About() {
                         </div>
                     </div>
 
-                    {/* Core Stack */}
                     <div className="md:col-span-6 bg-[#0b0f1f] border border-white/10 rounded-2xl p-8">
                         <h3 className="text-lg font-bold mb-6">Core Stack</h3>
 
@@ -151,7 +144,6 @@ export default function About() {
     );
 }
 
-/* ---------- Helper ---------- */
 function StackItem({
                        icon,
                        label,
